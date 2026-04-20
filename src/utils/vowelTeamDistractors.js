@@ -1,15 +1,28 @@
-import patternMeta from '../data/patternMeta.json';
+import patternMetaData from '../data/patternMeta.json';
 import { eligibleVowelTeamWords } from './wordBank.js';
 import { pickN, shuffle } from './rng.js';
 
-// Two distractors. Priority:
-//   a) words sharing none of the target's patterns (prefer same selected list)
-//   b) near-misses by alternate-spelling
-//   c) words with a different rarity-rank pattern from the same group
+const PATTERNS = patternMetaData.patterns ?? {};
+
+function isMultiVariant(pattern) {
+  return (PATTERNS[pattern]?.variants?.length ?? 0) > 1;
+}
+
+function sameSoundVariant(a, b) {
+  if (a.patterns.length !== 1 || b.patterns.length !== 1) return true;
+  const p = a.patterns[0];
+  if (p !== b.patterns[0]) return true;
+  if (!isMultiVariant(p)) return true;
+  const av = a.sound_variant ?? PATTERNS[p]?.default_variant;
+  const bv = b.sound_variant ?? PATTERNS[p]?.default_variant;
+  return av === bv;
+}
+
 function normalDistractors(target, pool) {
   const targetPatterns = new Set(target.patterns);
   const aPool = pool.filter((w) =>
-    w.word !== target.word && !w.patterns.some((p) => targetPatterns.has(p))
+    w.word !== target.word
+    && !w.patterns.some((p) => targetPatterns.has(p))
   );
   if (aPool.length >= 2) return pickN(aPool, 2).map((w) => w.word);
   const out = aPool.map((w) => w.word);
@@ -29,26 +42,28 @@ function normalDistractors(target, pool) {
   return out.slice(0, 2);
 }
 
-// Position-rule violator for the same /sound/. The correct answer always
-// follows the rule: oi/ai/au medial, oy/ay/aw final.
+// Position-rule violator using the word's own per-pattern position
+// (target.position[pattern]) and the sibling-pattern table.
 function positionViolator(target) {
   const swap = { oi: 'oy', oy: 'oi', ai: 'ay', ay: 'ai', au: 'aw', aw: 'au' };
   for (const p of target.patterns) {
     const partner = swap[p];
     if (!partner) continue;
-    if (patternMeta[p]?.position_rule !== patternMeta[partner]?.position_rule) {
+    const targetPos = target.position?.[p];
+    const partnerRule = PATTERNS[partner]?.position_rule;
+    if (!targetPos || !partnerRule) continue;
+    if (targetPos !== partnerRule) {
       return target.word.replace(p, partner);
     }
   }
   return null;
 }
 
-// Tricky-mode: 3 distractors = 1 homophone (if any) + 1 position-violator + 1 normal.
 export function buildVowelTeamChoices(target, config) {
   const pool = eligibleVowelTeamWords({
     patterns: config.patterns,
     difficulty: config.difficulty
-  });
+  }).filter((w) => sameSoundVariant(target, w));
 
   if (!config.trickyMode) {
     const distractors = normalDistractors(target, pool);

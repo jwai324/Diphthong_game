@@ -1,4 +1,6 @@
-import patternMeta from '../data/patternMeta.json';
+import patternMetaData from '../data/patternMeta.json';
+
+const PATTERNS = patternMetaData.patterns ?? {};
 
 export default function PatternChecklist({ selected, onChange }) {
   const set = new Set(selected);
@@ -8,7 +10,7 @@ export default function PatternChecklist({ selected, onChange }) {
   };
   return (
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-      {Object.entries(patternMeta).map(([p, meta]) => {
+      {Object.entries(PATTERNS).map(([p, meta]) => {
         const on = set.has(p);
         return (
           <button

@@ -1,22 +1,37 @@
-import patternMeta from '../data/patternMeta.json';
+import patternMetaData from '../data/patternMeta.json';
 
+const PATTERNS = patternMetaData.patterns ?? {};
 const cache = new Map();
+
+function variantOf(pattern, soundVariant) {
+  const entry = PATTERNS[pattern];
+  if (!entry) return null;
+  const id = soundVariant ?? entry.default_variant;
+  return entry.variants?.find((v) => v.id === id) ?? entry.variants?.[0] ?? null;
+}
+
+function ensure(variantId, src) {
+  if (cache.has(variantId)) return cache.get(variantId);
+  const a = new Audio(src);
+  a.preload = 'auto';
+  cache.set(variantId, a);
+  return a;
+}
 
 export function preload(patterns) {
   for (const p of patterns) {
-    if (cache.has(p)) continue;
-    const meta = patternMeta[p];
-    if (!meta) continue;
-    const a = new Audio(meta.audio);
-    a.preload = 'auto';
-    cache.set(p, a);
+    const entry = PATTERNS[p];
+    if (!entry) continue;
+    for (const v of entry.variants ?? []) {
+      ensure(v.id, v.audio);
+    }
   }
 }
 
-export function play(pattern) {
-  const a = cache.get(pattern) ?? new Audio(patternMeta[pattern]?.audio);
-  if (!a) return Promise.resolve();
-  cache.set(pattern, a);
+export function play(pattern, soundVariant) {
+  const v = variantOf(pattern, soundVariant);
+  if (!v) return Promise.resolve();
+  const a = ensure(v.id, v.audio);
   try {
     a.currentTime = 0;
     return a.play().catch(() => undefined);
@@ -25,6 +40,6 @@ export function play(pattern) {
   }
 }
 
-export function audioAvailable(pattern) {
-  return !!patternMeta[pattern]?.audio;
+export function audioAvailable(pattern, soundVariant) {
+  return !!variantOf(pattern, soundVariant)?.audio;
 }

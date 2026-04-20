@@ -1,7 +1,9 @@
-import patternMeta from '../data/patternMeta.json';
+import patternMetaData from '../data/patternMeta.json';
+
+const PATTERNS = patternMetaData.patterns ?? {};
 
 export function score(word) {
-  const rarities = word.patterns.map((p) => patternMeta[p]?.rarity_rank ?? 1);
+  const rarities = word.patterns.map((p) => PATTERNS[p]?.rarity_rank ?? 1);
   const rarity = rarities.reduce((a, b) => a + b, 0) / rarities.length;
   return (word.syllables * 2) + (word.letters * 0.2) + (rarity * 0.5);
 }

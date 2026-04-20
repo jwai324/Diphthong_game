@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import GradeChecklist from '../../components/GradeChecklist.jsx';
+import PoolSizeNotice from '../../components/PoolSizeNotice.jsx';
 
 const COUNTS = [5, 10, 15, 20];
 
@@ -26,6 +27,11 @@ export default function HeartWordsConfig({ initial, onStart, onBack }) {
           ))}
         </div>
       </section>
+      <PoolSizeNotice
+        mode="heart-words"
+        config={{ grades }}
+        questionCount={questionCount}
+      />
       <div className="flex gap-3">
         <button type="button" onClick={onBack} className="rounded-2xl bg-white px-5 py-3 font-bold">Back</button>
         <button
