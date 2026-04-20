@@ -1,34 +1,2693 @@
-[
-  { "word": "the",   "grade": "K", "heart_indices": [1],       "common_misspellings": ["thu",  "tha",  "thee"] },
-  { "word": "is",    "grade": "K", "heart_indices": [1],       "common_misspellings": ["iz",   "es",   "us"]   },
-  { "word": "of",    "grade": "K", "heart_indices": [1],       "common_misspellings": ["uv",   "ov",   "off"]  },
-  { "word": "was",   "grade": "K", "heart_indices": [1, 2],    "common_misspellings": ["wuz",  "wos",  "waz"]  },
-  { "word": "to",    "grade": "K", "heart_indices": [1],       "common_misspellings": ["too",  "tu",   "twoo"] },
-  { "word": "do",    "grade": "K", "heart_indices": [1],       "common_misspellings": ["doo",  "du",   "dew"]  },
-  { "word": "you",   "grade": "K", "heart_indices": [1, 2],    "common_misspellings": ["yoo",  "yu",   "yow"]  },
-  { "word": "are",   "grade": "K", "heart_indices": [1, 2],    "common_misspellings": ["ar",   "arr",  "er"]   },
-
-  { "word": "said",  "grade": "1", "heart_indices": [1, 2],    "common_misspellings": ["sed",  "sayd", "sied"] },
-  { "word": "they",  "grade": "1", "heart_indices": [2, 3],    "common_misspellings": ["thay", "thei", "thae"] },
-  { "word": "there", "grade": "1", "heart_indices": [2, 3, 4], "common_misspellings": ["ther", "thair","thare"] },
-  { "word": "from",  "grade": "1", "heart_indices": [2],       "common_misspellings": ["frum", "fram", "fron"] },
-  { "word": "have",  "grade": "1", "heart_indices": [3],       "common_misspellings": ["hav",  "haf",  "hove"] },
-  { "word": "what",  "grade": "1", "heart_indices": [0, 1],    "common_misspellings": ["wat",  "whut", "whot"] },
-  { "word": "want",  "grade": "1", "heart_indices": [1],       "common_misspellings": ["wont", "wunt", "wahnt"] },
-
-  { "word": "their", "grade": "2", "heart_indices": [2, 3],    "common_misspellings": ["ther",  "thair", "thier"] },
-  { "word": "where", "grade": "2", "heart_indices": [3, 4],    "common_misspellings": ["wher",  "wair",  "ware"]  },
-  { "word": "would", "grade": "2", "heart_indices": [1, 2, 3], "common_misspellings": ["wud",   "wood",  "woud"]  },
-  { "word": "could", "grade": "2", "heart_indices": [1, 2, 3], "common_misspellings": ["cud",   "kood",  "coud"]  },
-  { "word": "people","grade": "2", "heart_indices": [1, 2],    "common_misspellings": ["peple", "pepol", "peepl"] },
-
-  { "word": "because","grade": "3", "heart_indices": [2, 3, 5, 6], "common_misspellings": ["becuz", "becase", "becose"] },
-  { "word": "through","grade": "3", "heart_indices": [2, 3, 4, 5, 6], "common_misspellings": ["thru", "throu", "thruogh"] },
-  { "word": "though", "grade": "3", "heart_indices": [2, 3, 4, 5],    "common_misspellings": ["tho",  "thoe",  "thogh"]   },
-  { "word": "enough", "grade": "3", "heart_indices": [3, 4, 5],       "common_misspellings": ["enuf", "enuff", "enouf"]  },
-
-  { "word": "thought", "grade": "4", "heart_indices": [3, 4, 5, 6],    "common_misspellings": ["thot",  "thawt",  "thot"]   },
-  { "word": "knight",  "grade": "4", "heart_indices": [0, 1, 3, 4, 5], "common_misspellings": ["nite",  "nyt",    "knite"]  },
-  { "word": "answer",  "grade": "4", "heart_indices": [1, 2],          "common_misspellings": ["anser", "ansuer", "anwer"] },
-  { "word": "island",  "grade": "4", "heart_indices": [1],             "common_misspellings": ["iland", "iyland", "iseland"] }
-]
+{
+  "schema_version": "1.2",
+  "description": "Diphthong Dash heart words bank. K-2 from UFLI Foundations, 3-4 from Fry Instant Words (irregular subset).",
+  "sources": {
+    "K-2": "UFLI Foundations Heart Word Cards (ufli.education.ufl.edu/wp-content/uploads/2022/01/Heart-Word-Cards-for-Printing.pdf)",
+    "3-4": "Fry Instant Words 200-400 filtered to heart words (irregular high-frequency words)"
+  },
+  "notes": [
+    "heart_indices are 0-based letter positions of the irregular grapheme(s).",
+    "common_misspellings are kid-typical phonetic misspellings, suitable as distractor tiles.",
+    "Grade assignments for K-2 are best-effort; exact UFLI lesson ordering is proprietary.",
+    "A content reviewer should validate grade-level assignments before ship."
+  ],
+  "summary": {
+    "total_words": 173,
+    "by_grade": {
+      "1": 29,
+      "2": 44,
+      "3": 41,
+      "4": 28,
+      "K": 31
+    }
+  },
+  "words": [
+    {
+      "word": "the",
+      "grade": "K",
+      "heart_indices": [
+        0,
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "thuh",
+        "tha",
+        "thu",
+        "thi"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "a",
+      "grade": "K",
+      "heart_indices": [
+        0
+      ],
+      "common_misspellings": [
+        "uh",
+        "e",
+        "u",
+        "o"
+      ],
+      "letters": 1
+    },
+    {
+      "word": "I",
+      "grade": "K",
+      "heart_indices": [
+        0
+      ],
+      "common_misspellings": [
+        "eye",
+        "i"
+      ],
+      "letters": 1
+    },
+    {
+      "word": "is",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "iz",
+        "es"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "as",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "az",
+        "es"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "has",
+      "grade": "K",
+      "heart_indices": [
+        2
+      ],
+      "common_misspellings": [
+        "haz",
+        "hass",
+        "ha"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "his",
+      "grade": "K",
+      "heart_indices": [
+        2
+      ],
+      "common_misspellings": [
+        "hiz",
+        "hise",
+        "hi"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "was",
+      "grade": "K",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "wuz",
+        "wos",
+        "wus",
+        "wes"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "to",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "too",
+        "tu",
+        "twoo",
+        "ta"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "do",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "doo",
+        "du",
+        "da",
+        "doa"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "of",
+      "grade": "K",
+      "heart_indices": [
+        0,
+        1
+      ],
+      "common_misspellings": [
+        "ov",
+        "uv",
+        "off",
+        "uf"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "you",
+      "grade": "K",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "yoo",
+        "u",
+        "yu",
+        "yuu"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "are",
+      "grade": "K",
+      "heart_indices": [
+        0,
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "ar",
+        "arr",
+        "ere",
+        "ure"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "have",
+      "grade": "K",
+      "heart_indices": [
+        1,
+        3
+      ],
+      "common_misspellings": [
+        "hav",
+        "haev",
+        "heve",
+        "huve"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "said",
+      "grade": "K",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "sed",
+        "sayd",
+        "sade",
+        "seid"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "what",
+      "grade": "K",
+      "heart_indices": [
+        0,
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "wut",
+        "wot",
+        "whut",
+        "whet"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "they",
+      "grade": "K",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "thay",
+        "thae",
+        "thuy",
+        "thiy"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "be",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "bee",
+        "bi",
+        "bu",
+        "ba"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "he",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "hee",
+        "hi",
+        "hu",
+        "ha"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "she",
+      "grade": "K",
+      "heart_indices": [
+        2
+      ],
+      "common_misspellings": [
+        "shee",
+        "shi",
+        "shu",
+        "sha"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "we",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "wee",
+        "wi",
+        "wu",
+        "wa"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "me",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "mee",
+        "mi",
+        "mu",
+        "ma"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "my",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "mie",
+        "mi"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "by",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "bie",
+        "bi"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "go",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "goe",
+        "gow",
+        "gu",
+        "ga"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "so",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "soe",
+        "sow",
+        "su",
+        "sa"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "no",
+      "grade": "K",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "noe",
+        "now",
+        "nu",
+        "na"
+      ],
+      "letters": 2
+    },
+    {
+      "word": "for",
+      "grade": "K",
+      "heart_indices": [
+        0,
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "fer",
+        "fore",
+        "fur",
+        "far"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "here",
+      "grade": "K",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "heer",
+        "hir",
+        "hure",
+        "hire"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "there",
+      "grade": "K",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "thair",
+        "ther",
+        "thure",
+        "thire"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "where",
+      "grade": "K",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "wair",
+        "wher",
+        "whure",
+        "whire"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "from",
+      "grade": "1",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "frum",
+        "frome",
+        "fom",
+        "frrom"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "were",
+      "grade": "1",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "wer",
+        "wur",
+        "wure",
+        "wire"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "want",
+      "grade": "1",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "wont",
+        "wunt",
+        "went",
+        "wannt"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "who",
+      "grade": "1",
+      "heart_indices": [
+        0,
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "hoo",
+        "whoo",
+        "whu",
+        "wha"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "your",
+      "grade": "1",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "yor",
+        "yur",
+        "yuur",
+        "yaur"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "come",
+      "grade": "1",
+      "heart_indices": [
+        1,
+        3
+      ],
+      "common_misspellings": [
+        "cum",
+        "kome",
+        "cume",
+        "came"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "some",
+      "grade": "1",
+      "heart_indices": [
+        1,
+        3
+      ],
+      "common_misspellings": [
+        "sum",
+        "sume",
+        "same",
+        "soame"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "done",
+      "grade": "1",
+      "heart_indices": [
+        1,
+        3
+      ],
+      "common_misspellings": [
+        "dun",
+        "dune",
+        "dane",
+        "doane"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "love",
+      "grade": "1",
+      "heart_indices": [
+        1,
+        3
+      ],
+      "common_misspellings": [
+        "luv",
+        "lov",
+        "luve",
+        "lave"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "one",
+      "grade": "1",
+      "heart_indices": [
+        0,
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "wun",
+        "won",
+        "une",
+        "ane"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "once",
+      "grade": "1",
+      "heart_indices": [
+        0,
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "wunce",
+        "wonse",
+        "unce",
+        "ance"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "two",
+      "grade": "1",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "too",
+        "tu",
+        "twwo"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "know",
+      "grade": "1",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "no",
+        "nowe",
+        "knuw",
+        "knaw"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "knew",
+      "grade": "1",
+      "heart_indices": [
+        0
+      ],
+      "common_misspellings": [
+        "new",
+        "nu",
+        "knnew"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "could",
+      "grade": "1",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "cood",
+        "cud",
+        "coold",
+        "cooold"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "would",
+      "grade": "1",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "wood",
+        "wud",
+        "woold",
+        "wooold"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "should",
+      "grade": "1",
+      "heart_indices": [
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "shood",
+        "shud",
+        "shoold",
+        "shooold"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "been",
+      "grade": "1",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "ben",
+        "bene",
+        "buen",
+        "bien"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "any",
+      "grade": "1",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "eny",
+        "enny",
+        "ay",
+        "anny"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "many",
+      "grade": "1",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "meny",
+        "menny",
+        "muny",
+        "mony"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "put",
+      "grade": "1",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "poot",
+        "puht",
+        "pot",
+        "pat"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "pull",
+      "grade": "1",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "pool",
+        "pul",
+        "poll",
+        "pooll"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "full",
+      "grade": "1",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "fool",
+        "fol",
+        "foll",
+        "fooll"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "push",
+      "grade": "1",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "poosh",
+        "pus",
+        "posh",
+        "pash"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "give",
+      "grade": "1",
+      "heart_indices": [
+        3
+      ],
+      "common_misspellings": [
+        "giv",
+        "gyve",
+        "givu",
+        "givi"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "live",
+      "grade": "1",
+      "heart_indices": [
+        3
+      ],
+      "common_misspellings": [
+        "liv",
+        "lyve",
+        "livu",
+        "livi"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "word",
+      "grade": "1",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "werd",
+        "wurd",
+        "ward",
+        "woard"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "work",
+      "grade": "1",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "werk",
+        "wurk",
+        "wark",
+        "woark"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "about",
+      "grade": "1",
+      "heart_indices": [
+        0
+      ],
+      "common_misspellings": [
+        "abowt",
+        "aboot",
+        "ebout",
+        "ubout"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "does",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "duz",
+        "dose",
+        "dues",
+        "daes"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "use",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "yooz",
+        "yuse",
+        "usu",
+        "usi"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "very",
+      "grade": "2",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "vury",
+        "veri",
+        "viry",
+        "vary"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "front",
+      "grade": "2",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "frunt",
+        "fronte",
+        "font",
+        "frront"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "off",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "of",
+        "aff"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "people",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2,
+        5
+      ],
+      "common_misspellings": [
+        "peeple",
+        "peopel",
+        "puople",
+        "piople"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "friend",
+      "grade": "2",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "frend",
+        "freind",
+        "freend",
+        "fryend"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "again",
+      "grade": "2",
+      "heart_indices": [
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "agen",
+        "agane",
+        "agaen",
+        "agayn"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "against",
+      "grade": "2",
+      "heart_indices": [
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "agenst",
+        "aganst",
+        "agaenst",
+        "agaynst"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "world",
+      "grade": "2",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "werld",
+        "wurld",
+        "warld",
+        "woarld"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "water",
+      "grade": "2",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "wotter",
+        "wader",
+        "weter",
+        "wuter"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "watch",
+      "grade": "2",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "wotch",
+        "wach",
+        "wetch",
+        "wutch"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "because",
+      "grade": "2",
+      "heart_indices": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "common_misspellings": [
+        "becuz",
+        "becose",
+        "beceuse",
+        "becuuse"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "above",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "abuv",
+        "abuve",
+        "abovu",
+        "abovi"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "move",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "moov",
+        "muve",
+        "mave",
+        "moave"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "prove",
+      "grade": "2",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "proov",
+        "pruve",
+        "prave",
+        "proave"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "other",
+      "grade": "2",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "uther",
+        "othur",
+        "oher",
+        "oter"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "mother",
+      "grade": "2",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "muther",
+        "mothur",
+        "mather",
+        "moather"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "father",
+      "grade": "2",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "fathur",
+        "fauther",
+        "fether",
+        "futher"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "brother",
+      "grade": "2",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "bruther",
+        "brotha",
+        "bother",
+        "broter"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "another",
+      "grade": "2",
+      "heart_indices": [
+        3
+      ],
+      "common_misspellings": [
+        "anuther",
+        "anothur",
+        "anoher",
+        "anoter"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "today",
+      "grade": "2",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "toeday",
+        "tuday",
+        "taday",
+        "toaday"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "build",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "bild",
+        "biuld",
+        "boild",
+        "booild"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "built",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "bilt",
+        "biult",
+        "boilt",
+        "booilt"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "busy",
+      "grade": "2",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "bizy",
+        "bizzy",
+        "bosy",
+        "boosy"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "buy",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "by",
+        "bye",
+        "boy",
+        "booy"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "eye",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "i",
+        "iy",
+        "eyu",
+        "eyi"
+      ],
+      "letters": 3
+    },
+    {
+      "word": "heart",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "hart",
+        "heert",
+        "huart",
+        "hiart"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "pretty",
+      "grade": "2",
+      "heart_indices": [
+        2
+      ],
+      "common_misspellings": [
+        "prity",
+        "prettee",
+        "prutty",
+        "pritty"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "four",
+      "grade": "2",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "for",
+        "fore",
+        "foor",
+        "fooor"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "gone",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        3
+      ],
+      "common_misspellings": [
+        "gon",
+        "gawn",
+        "gune",
+        "gane"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "none",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        3
+      ],
+      "common_misspellings": [
+        "nun",
+        "nune",
+        "nane",
+        "noane"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "young",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "yung",
+        "yong",
+        "yuung",
+        "yaung"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "touch",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "tuch",
+        "tutch",
+        "tuuch",
+        "tauch"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "enough",
+      "grade": "2",
+      "heart_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "enuf",
+        "enuff",
+        "enuugh",
+        "enaugh"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "learn",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "lern",
+        "lurn",
+        "luarn",
+        "liarn"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "earth",
+      "grade": "2",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "erth",
+        "urth",
+        "uarth",
+        "iarth"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "early",
+      "grade": "2",
+      "heart_indices": [
+        0,
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "erly",
+        "urly",
+        "uarly",
+        "iarly"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "sure",
+      "grade": "2",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "shoor",
+        "shur",
+        "sore",
+        "soore"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "sugar",
+      "grade": "2",
+      "heart_indices": [
+        0
+      ],
+      "common_misspellings": [
+        "shugar",
+        "shooger",
+        "ugar",
+        "suggar"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "half",
+      "grade": "2",
+      "heart_indices": [
+        2
+      ],
+      "common_misspellings": [
+        "haff",
+        "hav",
+        "haf",
+        "hallf"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "listen",
+      "grade": "2",
+      "heart_indices": [
+        2
+      ],
+      "common_misspellings": [
+        "lissen",
+        "lisen",
+        "liten",
+        "lissten"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "often",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "offen",
+        "ofen",
+        "oten",
+        "offten"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "ocean",
+      "grade": "2",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "oshun",
+        "osean",
+        "ocuan",
+        "ocian"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "thought",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "thot",
+        "thawt",
+        "thuught",
+        "thaught"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "bought",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "bot",
+        "bawt",
+        "buught",
+        "baught"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "brought",
+      "grade": "3",
+      "heart_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "brot",
+        "brawt",
+        "bruught",
+        "braught"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "fought",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "fot",
+        "fawt",
+        "fuught",
+        "faught"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "through",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "common_misspellings": [
+        "thru",
+        "threw",
+        "thruugh",
+        "thraugh"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "though",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "tho",
+        "thow",
+        "thuugh",
+        "thaugh"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "rough",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "ruf",
+        "ruff",
+        "ruugh",
+        "raugh"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "tough",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "tuf",
+        "tuff",
+        "tuugh",
+        "taugh"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "laugh",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "laff",
+        "lauf",
+        "leugh",
+        "luugh"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "write",
+      "grade": "3",
+      "heart_indices": [
+        0,
+        4
+      ],
+      "common_misspellings": [
+        "rite",
+        "ryte",
+        "writu",
+        "writi"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "wrong",
+      "grade": "3",
+      "heart_indices": [
+        0
+      ],
+      "common_misspellings": [
+        "rong",
+        "raung",
+        "wrrong",
+        "wronng"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "sign",
+      "grade": "3",
+      "heart_indices": [
+        2
+      ],
+      "common_misspellings": [
+        "sine",
+        "syne",
+        "sin",
+        "siggn"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "answer",
+      "grade": "3",
+      "heart_indices": [
+        3
+      ],
+      "common_misspellings": [
+        "anser",
+        "ansir"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "island",
+      "grade": "3",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "iland",
+        "ieland",
+        "issland",
+        "islland"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "guess",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "gess",
+        "ges",
+        "goess",
+        "gooess"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "guest",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "gest",
+        "ges",
+        "goest",
+        "gooest"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "guide",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        4
+      ],
+      "common_misspellings": [
+        "gide",
+        "gyde",
+        "goide",
+        "gooide"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "guard",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "gard",
+        "gaurd",
+        "goard",
+        "gooard"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "whole",
+      "grade": "3",
+      "heart_indices": [
+        0,
+        1,
+        4
+      ],
+      "common_misspellings": [
+        "hole",
+        "hoel",
+        "wholu",
+        "wholi"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "shoe",
+      "grade": "3",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "shoo",
+        "shue",
+        "shae",
+        "shoae"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "true",
+      "grade": "3",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "tru",
+        "troo",
+        "troe",
+        "trooe"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "blue",
+      "grade": "3",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "bloo",
+        "blu",
+        "bloe",
+        "blooe"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "clue",
+      "grade": "3",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "kloo",
+        "clu",
+        "cloe",
+        "clooe"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "door",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "dor",
+        "dore",
+        "duor",
+        "daor"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "poor",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "por",
+        "pore",
+        "puor",
+        "paor"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "floor",
+      "grade": "3",
+      "heart_indices": [
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "flor",
+        "flore",
+        "fluor",
+        "flaor"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "every",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "evry",
+        "everee",
+        "evury",
+        "eviry"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "woman",
+      "grade": "3",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "wuman",
+        "wooman",
+        "waman",
+        "woaman"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "women",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "wimen",
+        "wimmen",
+        "wumen",
+        "wamen"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "minute",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "minit",
+        "minnit",
+        "menute",
+        "mynute"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "tomorrow",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "tomaro",
+        "tumaro",
+        "tumorrow",
+        "tamorrow"
+      ],
+      "letters": 8
+    },
+    {
+      "word": "pear",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "pair",
+        "pare",
+        "puar",
+        "piar"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "bear",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "bair",
+        "bare",
+        "buar",
+        "biar"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "tear",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "tair",
+        "tare",
+        "tuar",
+        "tiar"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "wear",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "wair",
+        "ware",
+        "wuar",
+        "wiar"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "break",
+      "grade": "3",
+      "heart_indices": [
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "brake",
+        "brayk",
+        "bruak",
+        "briak"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "great",
+      "grade": "3",
+      "heart_indices": [
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "grate",
+        "grayt",
+        "gruat",
+        "griat"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "steak",
+      "grade": "3",
+      "heart_indices": [
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "stake",
+        "stayk",
+        "stuak",
+        "stiak"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "eight",
+      "grade": "3",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "ate",
+        "ayt",
+        "uight",
+        "iight"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "weight",
+      "grade": "3",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "wate",
+        "wayt",
+        "wuight",
+        "wiight"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "straight",
+      "grade": "3",
+      "heart_indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "common_misspellings": [
+        "strate",
+        "strayt",
+        "streight",
+        "struight"
+      ],
+      "letters": 8
+    },
+    {
+      "word": "honest",
+      "grade": "4",
+      "heart_indices": [
+        0
+      ],
+      "common_misspellings": [
+        "onest",
+        "onist",
+        "honnest",
+        "honesst"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "honor",
+      "grade": "4",
+      "heart_indices": [
+        0
+      ],
+      "common_misspellings": [
+        "oner",
+        "onnor",
+        "onor",
+        "honnor"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "hour",
+      "grade": "4",
+      "heart_indices": [
+        0
+      ],
+      "common_misspellings": [
+        "our",
+        "howr",
+        "hor",
+        "hur"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "whose",
+      "grade": "4",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "common_misspellings": [
+        "hooze",
+        "hoose",
+        "whuse",
+        "whase"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "whom",
+      "grade": "4",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "hoom",
+        "hume",
+        "whum",
+        "wham"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "truly",
+      "grade": "4",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "trooly",
+        "truley",
+        "troly",
+        "traly"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "truth",
+      "grade": "4",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "trooth",
+        "truthe",
+        "troth",
+        "trath"
+      ],
+      "letters": 5
+    },
+    {
+      "word": "height",
+      "grade": "4",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "hite",
+        "hight",
+        "huight",
+        "hiight"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "imagine",
+      "grade": "4",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "common_misspellings": [
+        "imagin",
+        "imajine",
+        "imegine",
+        "imugine"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "business",
+      "grade": "4",
+      "heart_indices": [
+        1,
+        2
+      ],
+      "common_misspellings": [
+        "bizness",
+        "bizniss",
+        "bosiness",
+        "boosiness"
+      ],
+      "letters": 8
+    },
+    {
+      "word": "beautiful",
+      "grade": "4",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "common_misspellings": [
+        "butiful",
+        "bewtiful",
+        "buautiful",
+        "biautiful"
+      ],
+      "letters": 9
+    },
+    {
+      "word": "beauty",
+      "grade": "4",
+      "heart_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "bewty",
+        "byuty",
+        "buauty",
+        "biauty"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "February",
+      "grade": "4",
+      "heart_indices": [
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "feburary",
+        "febuary"
+      ],
+      "letters": 8
+    },
+    {
+      "word": "Wednesday",
+      "grade": "4",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "common_misspellings": [
+        "wensday",
+        "wendsday",
+        "ednesday"
+      ],
+      "letters": 9
+    },
+    {
+      "word": "breakfast",
+      "grade": "4",
+      "heart_indices": [
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "brekfast",
+        "brakefast",
+        "bruakfast",
+        "briakfast"
+      ],
+      "letters": 9
+    },
+    {
+      "word": "favorite",
+      "grade": "4",
+      "heart_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "common_misspellings": [
+        "favrite",
+        "faverit",
+        "favurite",
+        "favarite"
+      ],
+      "letters": 8
+    },
+    {
+      "word": "character",
+      "grade": "4",
+      "heart_indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "common_misspellings": [
+        "caracter",
+        "carakter",
+        "cheracter",
+        "churacter"
+      ],
+      "letters": 9
+    },
+    {
+      "word": "machine",
+      "grade": "4",
+      "heart_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "common_misspellings": [
+        "masheen",
+        "machene",
+        "machyne",
+        "machune"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "muscle",
+      "grade": "4",
+      "heart_indices": [
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "musel",
+        "mussel",
+        "musclu",
+        "muscli"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "journey",
+      "grade": "4",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "jerney",
+        "jurney",
+        "juurney",
+        "jaurney"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "journal",
+      "grade": "4",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "common_misspellings": [
+        "jernal",
+        "jurnal",
+        "juurnal",
+        "jaurnal"
+      ],
+      "letters": 7
+    },
+    {
+      "word": "cousin",
+      "grade": "4",
+      "heart_indices": [
+        2,
+        3,
+        4
+      ],
+      "common_misspellings": [
+        "cuzin",
+        "cusin",
+        "coosin",
+        "cooosin"
+      ],
+      "letters": 6
+    },
+    {
+      "word": "aunt",
+      "grade": "4",
+      "heart_indices": [
+        1,
+        2,
+        3
+      ],
+      "common_misspellings": [
+        "ant",
+        "awnt",
+        "aont",
+        "aoont"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "thorough",
+      "grade": "4",
+      "heart_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "common_misspellings": [
+        "thurough",
+        "thoro",
+        "tharough",
+        "thoarough"
+      ],
+      "letters": 8
+    },
+    {
+      "word": "although",
+      "grade": "4",
+      "heart_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "common_misspellings": [
+        "althow",
+        "altho",
+        "althuugh",
+        "althaugh"
+      ],
+      "letters": 8
+    },
+    {
+      "word": "says",
+      "grade": "4",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "sez",
+        "ses",
+        "seys",
+        "suys"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "warm",
+      "grade": "4",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "worm",
+        "warum",
+        "werm",
+        "wurm"
+      ],
+      "letters": 4
+    },
+    {
+      "word": "war",
+      "grade": "4",
+      "heart_indices": [
+        1
+      ],
+      "common_misspellings": [
+        "wore",
+        "wor",
+        "wer",
+        "wur"
+      ],
+      "letters": 3
+    }
+  ]
+}

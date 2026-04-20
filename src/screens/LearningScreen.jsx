@@ -22,12 +22,19 @@ export default function LearningScreen({ config, onExit }) {
 
   useEffect(() => { preload(patterns); }, [patterns]);
 
+  const playPatternFor = (w) => {
+    const rec = findWordRecord(w);
+    const variant = rec?.sound_variant;
+    if (audioAvailable(pattern, variant)) play(pattern, variant);
+  };
+
   useEffect(() => {
     const next = nextLearningWord(pattern);
     setWord(next);
     if (next) {
-      speak(next).then(() => audioAvailable(pattern) && play(pattern));
+      speak(next).then(() => playPatternFor(next));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pattern]);
 
   const advance = (result) => {
@@ -38,7 +45,7 @@ export default function LearningScreen({ config, onExit }) {
     const next = nextLearningWord(pattern);
     if (next) {
       setWord(next);
-      speak(next).then(() => audioAvailable(pattern) && play(pattern));
+      speak(next).then(() => playPatternFor(next));
     } else if (pIdx + 1 < patterns.length) {
       setPIdx(pIdx + 1);
     } else {
@@ -84,10 +91,10 @@ export default function LearningScreen({ config, onExit }) {
           >
             🔊 Word
           </button>
-          {audioAvailable(pattern) && (
+          {audioAvailable(pattern, record?.sound_variant) && (
             <button
               type="button"
-              onClick={() => play(pattern)}
+              onClick={() => play(pattern, record?.sound_variant)}
               className="rounded-full bg-white/90 px-6 py-3 text-ink"
             >
               🎵 Pattern

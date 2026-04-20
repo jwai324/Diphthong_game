@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PatternChecklist from '../../components/PatternChecklist.jsx';
 import GradeChecklist from '../../components/GradeChecklist.jsx';
+import PoolSizeNotice from '../../components/PoolSizeNotice.jsx';
 
 const COUNTS = [5, 10, 15, 20];
 const DIFFICULTIES = ['easy', 'medium', 'hard'];
@@ -68,6 +69,12 @@ export default function DashConfig({ initial, onStart, onBack }) {
           <span className="text-sm text-slate-500">(GO! interstitial after wrong answers)</span>
         </label>
       </section>
+
+      <PoolSizeNotice
+        mode="dash"
+        config={{ patterns, grades, difficulty }}
+        questionCount={questionCount}
+      />
 
       <div className="flex gap-3">
         <button type="button" onClick={onBack} className="rounded-2xl bg-white px-5 py-3 font-bold">Back</button>

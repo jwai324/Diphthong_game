@@ -1,18 +1,152 @@
 {
-  "oi": { "sound_label": "/oi/ sound as in boy",  "sound_group": "oi-oy", "rarity_rank": 3, "position_rule": "medial", "audio": "/audio/patterns/oi.mp3",  "color": "#e11d48" },
-  "oy": { "sound_label": "/oi/ sound as in boy",  "sound_group": "oi-oy", "rarity_rank": 3, "position_rule": "final",  "audio": "/audio/patterns/oy.mp3",  "color": "#e11d48" },
-  "ou": { "sound_label": "/ow/ sound as in cloud","sound_group": "ou-ow", "rarity_rank": 4, "position_rule": "medial", "audio": "/audio/patterns/ou.mp3",  "color": "#7c3aed" },
-  "ow": { "sound_label": "/ow/ sound as in cow",  "sound_group": "ou-ow", "rarity_rank": 4, "position_rule": "final",  "audio": "/audio/patterns/ow.mp3",  "color": "#7c3aed" },
-  "au": { "sound_label": "/aw/ sound as in haul", "sound_group": "au-aw", "rarity_rank": 5, "position_rule": "medial", "audio": "/audio/patterns/au.mp3",  "color": "#0891b2" },
-  "aw": { "sound_label": "/aw/ sound as in saw",  "sound_group": "au-aw", "rarity_rank": 5, "position_rule": "final",  "audio": "/audio/patterns/aw.mp3",  "color": "#0891b2" },
-  "ai": { "sound_label": "/ay/ sound as in rain", "sound_group": "ai-ay", "rarity_rank": 1, "position_rule": "medial", "audio": "/audio/patterns/ai.mp3",  "color": "#16a34a" },
-  "ay": { "sound_label": "/ay/ sound as in day",  "sound_group": "ai-ay", "rarity_rank": 1, "position_rule": "final",  "audio": "/audio/patterns/ay.mp3",  "color": "#16a34a" },
-  "ea": { "sound_label": "/ee/ sound as in eat",  "sound_group": "ee",    "rarity_rank": 1, "position_rule": "any",    "audio": "/audio/patterns/ea.mp3",  "color": "#f59e0b" },
-  "ee": { "sound_label": "/ee/ sound as in tree", "sound_group": "ee",    "rarity_rank": 1, "position_rule": "any",    "audio": "/audio/patterns/ee.mp3",  "color": "#f59e0b" },
-  "oa": { "sound_label": "/oh/ sound as in boat", "sound_group": "oh",    "rarity_rank": 2, "position_rule": "medial", "audio": "/audio/patterns/oa.mp3",  "color": "#2563eb" },
-  "oe": { "sound_label": "/oh/ sound as in toe",  "sound_group": "oh",    "rarity_rank": 6, "position_rule": "final",  "audio": "/audio/patterns/oe.mp3",  "color": "#2563eb" },
-  "ie": { "sound_label": "/eye/ sound as in pie", "sound_group": "eye",   "rarity_rank": 4, "position_rule": "final",  "audio": "/audio/patterns/ie.mp3",  "color": "#db2777" },
-  "igh":{ "sound_label": "/eye/ sound as in night","sound_group":"eye",   "rarity_rank": 5, "position_rule": "medial", "audio": "/audio/patterns/igh.mp3", "color": "#db2777" },
-  "ui": { "sound_label": "/oo/ sound as in fruit","sound_group": "oo",    "rarity_rank": 6, "position_rule": "medial", "audio": "/audio/patterns/ui.mp3",  "color": "#0d9488" },
-  "ue": { "sound_label": "/oo/ sound as in blue", "sound_group": "oo",    "rarity_rank": 6, "position_rule": "final",  "audio": "/audio/patterns/ue.mp3",  "color": "#0d9488" }
+  "schema_version": "1.2",
+  "patterns": {
+    "ai": {
+      "rarity_rank": 1,
+      "position_rule": "medial",
+      "color": "#2563eb",
+      "default_variant": "ai",
+      "variants": [
+        { "id": "ai", "sound_label": "long a sound as in rain", "example_word": "rain", "audio": "/audio/patterns/ai.mp3" }
+      ]
+    },
+    "ay": {
+      "rarity_rank": 1,
+      "position_rule": "final",
+      "color": "#16a34a",
+      "default_variant": "ay",
+      "variants": [
+        { "id": "ay", "sound_label": "long a sound as in day", "example_word": "day", "audio": "/audio/patterns/ay.mp3" }
+      ]
+    },
+    "ea": {
+      "rarity_rank": 1,
+      "position_rule": "any",
+      "color": "#059669",
+      "default_variant": "ea_long",
+      "variants": [
+        { "id": "ea_long",  "sound_label": "long e sound as in eat",   "example_word": "eat",   "audio": "/audio/patterns/ea_long.mp3" },
+        { "id": "ea_short", "sound_label": "short e sound as in bread","example_word": "bread", "audio": "/audio/patterns/ea_short.mp3" }
+      ]
+    },
+    "ee": {
+      "rarity_rank": 1,
+      "position_rule": "any",
+      "color": "#f59e0b",
+      "default_variant": "ee",
+      "variants": [
+        { "id": "ee", "sound_label": "long e sound as in bee", "example_word": "bee", "audio": "/audio/patterns/ee.mp3" }
+      ]
+    },
+    "oa": {
+      "rarity_rank": 2,
+      "position_rule": "medial",
+      "color": "#1d4ed8",
+      "default_variant": "oa",
+      "variants": [
+        { "id": "oa", "sound_label": "long o sound as in boat", "example_word": "boat", "audio": "/audio/patterns/oa.mp3" }
+      ]
+    },
+    "ou": {
+      "rarity_rank": 2,
+      "position_rule": "medial",
+      "color": "#7c3aed",
+      "default_variant": "ou",
+      "variants": [
+        { "id": "ou", "sound_label": "ow sound as in cloud", "example_word": "out", "audio": "/audio/patterns/ou.mp3" }
+      ]
+    },
+    "ow": {
+      "rarity_rank": 2,
+      "position_rule": "any",
+      "color": "#ea580c",
+      "default_variant": "ow_ow",
+      "variants": [
+        { "id": "ow_ow",     "sound_label": "ow sound as in cow",     "example_word": "cow",  "audio": "/audio/patterns/ow_ow.mp3" },
+        { "id": "ow_long_o", "sound_label": "long o sound as in snow","example_word": "snow", "audio": "/audio/patterns/ow_long_o.mp3" }
+      ]
+    },
+    "oi": {
+      "rarity_rank": 3,
+      "position_rule": "medial",
+      "color": "#e11d48",
+      "default_variant": "oi",
+      "variants": [
+        { "id": "oi", "sound_label": "oy sound as in coin", "example_word": "coin", "audio": "/audio/patterns/oi.mp3" }
+      ]
+    },
+    "oy": {
+      "rarity_rank": 3,
+      "position_rule": "final",
+      "color": "#be185d",
+      "default_variant": "oy",
+      "variants": [
+        { "id": "oy", "sound_label": "oy sound as in boy", "example_word": "boy", "audio": "/audio/patterns/oy.mp3" }
+      ]
+    },
+    "igh": {
+      "rarity_rank": 3,
+      "position_rule": "medial",
+      "color": "#db2777",
+      "default_variant": "igh",
+      "variants": [
+        { "id": "igh", "sound_label": "long i sound as in light", "example_word": "light", "audio": "/audio/patterns/igh.mp3" }
+      ]
+    },
+    "ie": {
+      "rarity_rank": 4,
+      "position_rule": "any",
+      "color": "#9333ea",
+      "default_variant": "ie_long_i",
+      "variants": [
+        { "id": "ie_long_i", "sound_label": "long i sound as in pie",   "example_word": "pie",   "audio": "/audio/patterns/ie_long_i.mp3" },
+        { "id": "ie_long_e", "sound_label": "long e sound as in field", "example_word": "field", "audio": "/audio/patterns/ie_long_e.mp3" }
+      ]
+    },
+    "au": {
+      "rarity_rank": 5,
+      "position_rule": "medial",
+      "color": "#0891b2",
+      "default_variant": "au",
+      "variants": [
+        { "id": "au", "sound_label": "aw sound as in cause", "example_word": "cause", "audio": "/audio/patterns/au.mp3" }
+      ]
+    },
+    "aw": {
+      "rarity_rank": 5,
+      "position_rule": "final",
+      "color": "#0e7490",
+      "default_variant": "aw",
+      "variants": [
+        { "id": "aw", "sound_label": "aw sound as in saw", "example_word": "saw", "audio": "/audio/patterns/aw.mp3" }
+      ]
+    },
+    "oe": {
+      "rarity_rank": 5,
+      "position_rule": "final",
+      "color": "#0d9488",
+      "default_variant": "oe",
+      "variants": [
+        { "id": "oe", "sound_label": "long o sound as in toe", "example_word": "toe", "audio": "/audio/patterns/oe.mp3" }
+      ]
+    },
+    "ui": {
+      "rarity_rank": 5,
+      "position_rule": "medial",
+      "color": "#ca8a04",
+      "default_variant": "ui",
+      "variants": [
+        { "id": "ui", "sound_label": "long oo sound as in fruit", "example_word": "fruit", "audio": "/audio/patterns/ui.mp3" }
+      ]
+    },
+    "ue": {
+      "rarity_rank": 5,
+      "position_rule": "final",
+      "color": "#a16207",
+      "default_variant": "ue",
+      "variants": [
+        { "id": "ue", "sound_label": "long oo sound as in blue", "example_word": "blue", "audio": "/audio/patterns/ue.mp3" }
+      ]
+    }
+  }
 }

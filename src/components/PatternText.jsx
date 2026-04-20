@@ -1,4 +1,6 @@
-import patternMeta from '../data/patternMeta.json';
+import patternMetaData from '../data/patternMeta.json';
+
+const PATTERNS = patternMetaData.patterns ?? {};
 
 function findPatternRanges(word, patterns) {
   const ranges = [];
@@ -23,7 +25,7 @@ function renderVowelTeam(word, patterns) {
   let cursor = 0;
   ranges.forEach((r, i) => {
     if (cursor < r.start) out.push(<span key={`p${i}`}>{word.slice(cursor, r.start)}</span>);
-    const color = patternMeta[r.pattern]?.color ?? '#0f172a';
+    const color = PATTERNS[r.pattern]?.color ?? '#0f172a';
     out.push(
       <span key={`m${i}`} style={{ color }} className="font-bold">
         {word.slice(r.start, r.end)}
