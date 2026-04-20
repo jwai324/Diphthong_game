@@ -16,7 +16,7 @@
       "color": "#16a34a",
       "default_variant": "ay",
       "variants": [
-        { "id": "ay", "sound_label": "long a sound as in day", "example_word": "day", "audio": "/audio/patterns/ay.mp3" }
+        { "id": "ay", "sound_label": "long a sound as in day", "example_word": "day", "audio": "/audio/patterns/ai.mp3" }
       ]
     },
     "ea": {
@@ -25,7 +25,7 @@
       "color": "#059669",
       "default_variant": "ea_long",
       "variants": [
-        { "id": "ea_long",  "sound_label": "long e sound as in eat",   "example_word": "eat",   "audio": "/audio/patterns/ea_long.mp3" },
+        { "id": "ea_long",  "sound_label": "long e sound as in eat",   "example_word": "eat",   "audio": "/audio/patterns/ee.mp3" },
         { "id": "ea_short", "sound_label": "short e sound as in bread","example_word": "bread", "audio": "/audio/patterns/ea_short.mp3" }
       ]
     },
@@ -44,7 +44,7 @@
       "color": "#1d4ed8",
       "default_variant": "oa",
       "variants": [
-        { "id": "oa", "sound_label": "long o sound as in boat", "example_word": "boat", "audio": "/audio/patterns/oa.mp3" }
+        { "id": "oa", "sound_label": "long o sound as in boat", "example_word": "boat", "audio": "/audio/patterns/oe.mp3" }
       ]
     },
     "ou": {
@@ -62,8 +62,8 @@
       "color": "#ea580c",
       "default_variant": "ow_ow",
       "variants": [
-        { "id": "ow_ow",     "sound_label": "ow sound as in cow",     "example_word": "cow",  "audio": "/audio/patterns/ow_ow.mp3" },
-        { "id": "ow_long_o", "sound_label": "long o sound as in snow","example_word": "snow", "audio": "/audio/patterns/ow_long_o.mp3" }
+        { "id": "ow_ow",     "sound_label": "ow sound as in cow",     "example_word": "cow",  "audio": "/audio/patterns/ou.mp3" },
+        { "id": "ow_long_o", "sound_label": "long o sound as in snow","example_word": "snow", "audio": "/audio/patterns/oe.mp3" }
       ]
     },
     "oi": {
@@ -72,7 +72,7 @@
       "color": "#e11d48",
       "default_variant": "oi",
       "variants": [
-        { "id": "oi", "sound_label": "oy sound as in coin", "example_word": "coin", "audio": "/audio/patterns/oi.mp3" }
+        { "id": "oi", "sound_label": "oy sound as in coin", "example_word": "coin", "audio": "/audio/patterns/oy.mp3" }
       ]
     },
     "oy": {
@@ -99,8 +99,8 @@
       "color": "#9333ea",
       "default_variant": "ie_long_i",
       "variants": [
-        { "id": "ie_long_i", "sound_label": "long i sound as in pie",   "example_word": "pie",   "audio": "/audio/patterns/ie_long_i.mp3" },
-        { "id": "ie_long_e", "sound_label": "long e sound as in field", "example_word": "field", "audio": "/audio/patterns/ie_long_e.mp3" }
+        { "id": "ie_long_i", "sound_label": "long i sound as in pie",   "example_word": "pie",   "audio": "/audio/patterns/igh.mp3" },
+        { "id": "ie_long_e", "sound_label": "long e sound as in field", "example_word": "field", "audio": "/audio/patterns/ee.mp3" }
       ]
     },
     "au": {
@@ -109,7 +109,7 @@
       "color": "#0891b2",
       "default_variant": "au",
       "variants": [
-        { "id": "au", "sound_label": "aw sound as in cause", "example_word": "cause", "audio": "/audio/patterns/au.mp3" }
+        { "id": "au", "sound_label": "aw sound as in cause", "example_word": "cause", "audio": "/audio/patterns/aw.mp3" }
       ]
     },
     "aw": {
@@ -136,7 +136,7 @@
       "color": "#ca8a04",
       "default_variant": "ui",
       "variants": [
-        { "id": "ui", "sound_label": "long oo sound as in fruit", "example_word": "fruit", "audio": "/audio/patterns/ui.mp3" }
+        { "id": "ui", "sound_label": "long oo sound as in fruit", "example_word": "fruit", "audio": "/audio/patterns/ue.mp3" }
       ]
     },
     "ue": {
