@@ -1,0 +1,34 @@
+[
+  { "word": "the",   "grade": "K", "heart_indices": [1],       "common_misspellings": ["thu",  "tha",  "thee"] },
+  { "word": "is",    "grade": "K", "heart_indices": [1],       "common_misspellings": ["iz",   "es",   "us"]   },
+  { "word": "of",    "grade": "K", "heart_indices": [1],       "common_misspellings": ["uv",   "ov",   "off"]  },
+  { "word": "was",   "grade": "K", "heart_indices": [1, 2],    "common_misspellings": ["wuz",  "wos",  "waz"]  },
+  { "word": "to",    "grade": "K", "heart_indices": [1],       "common_misspellings": ["too",  "tu",   "twoo"] },
+  { "word": "do",    "grade": "K", "heart_indices": [1],       "common_misspellings": ["doo",  "du",   "dew"]  },
+  { "word": "you",   "grade": "K", "heart_indices": [1, 2],    "common_misspellings": ["yoo",  "yu",   "yow"]  },
+  { "word": "are",   "grade": "K", "heart_indices": [1, 2],    "common_misspellings": ["ar",   "arr",  "er"]   },
+
+  { "word": "said",  "grade": "1", "heart_indices": [1, 2],    "common_misspellings": ["sed",  "sayd", "sied"] },
+  { "word": "they",  "grade": "1", "heart_indices": [2, 3],    "common_misspellings": ["thay", "thei", "thae"] },
+  { "word": "there", "grade": "1", "heart_indices": [2, 3, 4], "common_misspellings": ["ther", "thair","thare"] },
+  { "word": "from",  "grade": "1", "heart_indices": [2],       "common_misspellings": ["frum", "fram", "fron"] },
+  { "word": "have",  "grade": "1", "heart_indices": [3],       "common_misspellings": ["hav",  "haf",  "hove"] },
+  { "word": "what",  "grade": "1", "heart_indices": [0, 1],    "common_misspellings": ["wat",  "whut", "whot"] },
+  { "word": "want",  "grade": "1", "heart_indices": [1],       "common_misspellings": ["wont", "wunt", "wahnt"] },
+
+  { "word": "their", "grade": "2", "heart_indices": [2, 3],    "common_misspellings": ["ther",  "thair", "thier"] },
+  { "word": "where", "grade": "2", "heart_indices": [3, 4],    "common_misspellings": ["wher",  "wair",  "ware"]  },
+  { "word": "would", "grade": "2", "heart_indices": [1, 2, 3], "common_misspellings": ["wud",   "wood",  "woud"]  },
+  { "word": "could", "grade": "2", "heart_indices": [1, 2, 3], "common_misspellings": ["cud",   "kood",  "coud"]  },
+  { "word": "people","grade": "2", "heart_indices": [1, 2],    "common_misspellings": ["peple", "pepol", "peepl"] },
+
+  { "word": "because","grade": "3", "heart_indices": [2, 3, 5, 6], "common_misspellings": ["becuz", "becase", "becose"] },
+  { "word": "through","grade": "3", "heart_indices": [2, 3, 4, 5, 6], "common_misspellings": ["thru", "throu", "thruogh"] },
+  { "word": "though", "grade": "3", "heart_indices": [2, 3, 4, 5],    "common_misspellings": ["tho",  "thoe",  "thogh"]   },
+  { "word": "enough", "grade": "3", "heart_indices": [3, 4, 5],       "common_misspellings": ["enuf", "enuff", "enouf"]  },
+
+  { "word": "thought", "grade": "4", "heart_indices": [3, 4, 5, 6],    "common_misspellings": ["thot",  "thawt",  "thot"]   },
+  { "word": "knight",  "grade": "4", "heart_indices": [0, 1, 3, 4, 5], "common_misspellings": ["nite",  "nyt",    "knite"]  },
+  { "word": "answer",  "grade": "4", "heart_indices": [1, 2],          "common_misspellings": ["anser", "ansuer", "anwer"] },
+  { "word": "island",  "grade": "4", "heart_indices": [1],             "common_misspellings": ["iland", "iyland", "iseland"] }
+]

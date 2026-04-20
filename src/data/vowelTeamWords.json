@@ -1,0 +1,42 @@
+[
+  { "word": "boy",     "patterns": ["oy"],  "position": { "oy":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["boi", "boe"] },
+  { "word": "toy",     "patterns": ["oy"],  "position": { "oy":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["toi", "toe"] },
+  { "word": "joy",     "patterns": ["oy"],  "position": { "oy":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["joi", "joe"] },
+  { "word": "coin",    "patterns": ["oi"],  "position": { "oi":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "medium", "alternate_spellings": ["coyn", "cone"] },
+  { "word": "soil",    "patterns": ["oi"],  "position": { "oi":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "medium", "alternate_spellings": ["soyl", "sole"] },
+  { "word": "boil",    "patterns": ["oi"],  "position": { "oi":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "medium", "alternate_spellings": ["boyl", "bole"] },
+
+  { "word": "cow",     "patterns": ["ow"],  "position": { "ow":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["cou",  "co"]   },
+  { "word": "now",     "patterns": ["ow"],  "position": { "ow":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["nou",  "no"]   },
+  { "word": "cloud",   "patterns": ["ou"],  "position": { "ou":  "medial" }, "syllables": 1, "letters": 5, "difficulty_tier": "medium", "alternate_spellings": ["clowd", "clud"] },
+  { "word": "loud",    "patterns": ["ou"],  "position": { "ou":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "medium", "alternate_spellings": ["lowd",  "lod"]  },
+
+  { "word": "saw",     "patterns": ["aw"],  "position": { "aw":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["sau",  "so"]   },
+  { "word": "draw",    "patterns": ["aw"],  "position": { "aw":  "final"  }, "syllables": 1, "letters": 4, "difficulty_tier": "easy",   "alternate_spellings": ["drau", "drow"] },
+  { "word": "haul",    "patterns": ["au"],  "position": { "au":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "medium", "alternate_spellings": ["hawl", "hol"]  },
+  { "word": "sauce",   "patterns": ["au"],  "position": { "au":  "medial" }, "syllables": 1, "letters": 5, "difficulty_tier": "medium", "alternate_spellings": ["sawce","soss"] },
+
+  { "word": "rain",    "patterns": ["ai"],  "position": { "ai":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "easy",   "alternate_spellings": ["rayn", "ren"]  },
+  { "word": "wait",    "patterns": ["ai"],  "position": { "ai":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "easy",   "alternate_spellings": ["wayt", "wat"]  },
+  { "word": "day",     "patterns": ["ay"],  "position": { "ay":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["dai",  "de"]   },
+  { "word": "play",    "patterns": ["ay"],  "position": { "ay":  "final"  }, "syllables": 1, "letters": 4, "difficulty_tier": "easy",   "alternate_spellings": ["plai", "ple"]  },
+  { "word": "saying",  "patterns": ["ay"],  "position": { "ay":  "medial" }, "syllables": 2, "letters": 6, "difficulty_tier": "hard",   "alternate_spellings": ["saiing","seying"] },
+
+  { "word": "eat",     "patterns": ["ea"],  "position": { "ea":  "medial" }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["et",   "eet"]  },
+  { "word": "team",    "patterns": ["ea"],  "position": { "ea":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "easy",   "alternate_spellings": ["teem", "tem"]  },
+  { "word": "tree",    "patterns": ["ee"],  "position": { "ee":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "easy",   "alternate_spellings": ["trea", "tre"]  },
+  { "word": "see",     "patterns": ["ee"],  "position": { "ee":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["sea",  "se"]   },
+
+  { "word": "boat",    "patterns": ["oa"],  "position": { "oa":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "easy",   "alternate_spellings": ["bote", "bowt"] },
+  { "word": "soap",    "patterns": ["oa"],  "position": { "oa":  "medial" }, "syllables": 1, "letters": 4, "difficulty_tier": "easy",   "alternate_spellings": ["sope", "sowp"] },
+  { "word": "toe",     "patterns": ["oe"],  "position": { "oe":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["to",   "tow"]  },
+
+  { "word": "pie",     "patterns": ["ie"],  "position": { "ie":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["py",   "pi"]   },
+  { "word": "tie",     "patterns": ["ie"],  "position": { "ie":  "final"  }, "syllables": 1, "letters": 3, "difficulty_tier": "easy",   "alternate_spellings": ["ty",   "ti"]   },
+  { "word": "night",   "patterns": ["igh"], "position": { "igh": "medial" }, "syllables": 1, "letters": 5, "difficulty_tier": "medium", "alternate_spellings": ["nite", "nyt"]  },
+  { "word": "light",   "patterns": ["igh"], "position": { "igh": "medial" }, "syllables": 1, "letters": 5, "difficulty_tier": "medium", "alternate_spellings": ["lite", "lyt"]  },
+
+  { "word": "fruit",   "patterns": ["ui"],  "position": { "ui":  "medial" }, "syllables": 1, "letters": 5, "difficulty_tier": "medium", "alternate_spellings": ["froot","frut"] },
+  { "word": "blue",    "patterns": ["ue"],  "position": { "ue":  "final"  }, "syllables": 1, "letters": 4, "difficulty_tier": "easy",   "alternate_spellings": ["bloo", "blu"]  },
+  { "word": "true",    "patterns": ["ue"],  "position": { "ue":  "final"  }, "syllables": 1, "letters": 4, "difficulty_tier": "easy",   "alternate_spellings": ["troo", "tru"]  }
+]
