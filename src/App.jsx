@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import LandingScreen from './screens/LandingScreen.jsx';
 import HomeScreen from './screens/HomeScreen.jsx';
 import ConfigScreen from './screens/ConfigScreen.jsx';
 import CountdownScreen from './screens/CountdownScreen.jsx';
@@ -9,6 +10,9 @@ import ReviewScreen from './screens/ReviewScreen.jsx';
 import { requestWakeLock, releaseWakeLock } from './utils/wakeLock.js';
 
 export default function App() {
+  const [showLanding, setShowLanding] = useState(() => {
+    return localStorage.getItem('dismissedLanding') !== 'true';
+  });
   const [screen, setScreen]   = useState('home');
   const [mode, setMode]       = useState(null);
   const [config, setConfig]   = useState(null);
@@ -23,6 +27,12 @@ export default function App() {
     }
   }, [screen]);
 
+  const dismissLanding = () => {
+    localStorage.setItem('dismissedLanding', 'true');
+    setShowLanding(false);
+    setScreen('home');
+  };
+
   const goHome = () => { setScreen('home'); setMode(null); setConfig(null); setResults([]); };
 
   const startConfig = (id) => { setMode(id); setConfig(null); setScreen('config'); };
@@ -35,13 +45,16 @@ export default function App() {
 
   return (
     <div className="min-h-dvh bg-gradient-to-br from-indigo-700 via-purple-700 to-rose-600 font-display text-ink">
-      {screen === 'home' && (
+      {showLanding && (
+        <LandingScreen onEnter={dismissLanding} />
+      )}
+      {!showLanding && screen === 'home' && (
         <HomeScreen
           onPickMode={startConfig}
           onLoadPreset={(p) => { setMode(p.mode); setConfig(p.config); setScreen('config'); }}
         />
       )}
-      {screen === 'config' && mode && (
+      {!showLanding && screen === 'config' && mode && (
         <ConfigScreen
           mode={mode}
           initial={config}
@@ -49,19 +62,19 @@ export default function App() {
           onBack={goHome}
         />
       )}
-      {screen === 'countdown' && (
+      {!showLanding && screen === 'countdown' && (
         <CountdownScreen onDone={() => setScreen('game')} />
       )}
-      {screen === 'game' && config && (
+      {!showLanding && screen === 'game' && config && (
         <QuestionScreen
           config={config}
           onFinish={(r) => { setResults(r.results); setTotalMs(r.totalMs); setScreen('finish'); }}
         />
       )}
-      {screen === 'learning' && config && (
+      {!showLanding && screen === 'learning' && config && (
         <LearningScreen config={config} onExit={goHome} />
       )}
-      {screen === 'finish' && config && (
+      {!showLanding && screen === 'finish' && config && (
         <FinishScreen
           config={config}
           results={results}
@@ -70,7 +83,7 @@ export default function App() {
           onHome={goHome}
         />
       )}
-      {screen === 'review' && config && (
+      {!showLanding && screen === 'review' && config && (
         <ReviewScreen config={config} results={results} onHome={goHome} />
       )}
     </div>
